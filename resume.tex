@@ -1,0 +1,293 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{tikz}
+\usepackage{fontawesome}
+
+
+
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-1pt}}
+
+\newcommand{\ExternalLink}{%
+    \tikz[x=1.5ex, y=1.5ex, baseline=-0.05ex]{% 
+        \begin{scope}[x=1.3ex, y=1.3ex]
+            \clip (-0.1,-0.1) 
+                --++ (-0, 1.2) 
+                --++ (0.6, 0) 
+                --++ (0, -0.6) 
+                --++ (0.6, 0) 
+                --++ (0, -1);
+            \path[draw, 
+                line width = 0.8, 
+                rounded corners=0.5] 
+                (0,0) rectangle (1,1);
+        \end{scope}
+        \path[draw, line width = 0.8] (0.5, 0.5) 
+            -- (1, 1);
+        \path[draw, line width = 0.8] (0.6, 1) 
+            -- (1, 1) -- (1, 0.6);
+        }
+    }
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Yasser Elsaid} \\ \vspace{1pt}
+     \href{mailto:yelsaid@my.yorku.ca}{\underline{yelsaid@my.yorku.ca}} $|$ 
+     \underline{+1(647)6774960} $|$ 
+    \href{https://linkedin.com/in/yasserelsaid}{\underline{linkedin.com/in/yasserelsaid}} $|$
+    \href{https://github.com/yasserelsaid}{\underline{github.com/yasserelsaid}} $|$
+    \href{https://yasserelsaid.com}{\underline{yasserelsaid.com}}
+
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {York University}{Toronto, Canada}
+      {Honours Bachelor of Science, Computer Science (GPA: 3.8/4.0)}{Expected Dec. 2022}
+   
+  \resumeSubHeadingListEnd
+
+  %-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+   \small{\item{
+    \textbf{Languages}{: JavaScript, Go, Python, C, C++, Java, SQL, HTML, CSS} \\
+    \textbf{Frameworks/Tools}{: React, Node.js, AWS, Docker, MongoDB, Mongoose, MySQL, Git, Next.js, Postman, Gin, RESTful APIs, AJAX, Selenium } \\
+    % \textbf{Other}{: Data Structures \& Algorithms}
+   }}
+\end{itemize}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Incoming Software Engineer Intern}{Jan. 2022 -- Apr. 2022}
+    {Tesla}{Palo Alto, California}
+    \resumeItemListStart
+      \resumeItem{Incoming intern at the Vehicle Software team}
+
+      % \resumeItem{Implemented \textbf{Firebase authentication} with different user roles in which admins have permissions to perform CRUD operations on the products}
+      % \resumeItem{Created an admin panel that allows the root user to keep track of orders and manage admins}
+
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Development Intern}{May 2021 -- Dec. 2021}
+      {BlackBerry}{Waterloo, Canada}
+    
+      \resumeItemListStart
+        \resumeItem{Developing microservices in \textbf{Go} for cloud computing, monitoring, cost management, and DevOps services}
+        \resumeItem{Migrating and improving a \textbf{Ruby on Rails} application to a more maintainable \textbf{React} application connected to Go microservices for better performance and user experience}
+        \resumeItem{Optimized response time of multiple endpoints by making use of the synchronization features in Go which resulted in a \textbf{20\% faster response time}}
+        \resumeItem{Automating deployment of \textbf{Docker} containers to \textbf{Kubernetes} cluster using \textbf{Gitlab CI pipelines}}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Research Assistant}{Jan. 2021 -- May 2021}
+      {York University}{Toronto, Canada}
+    
+      \resumeItemListStart
+        \resumeItem{Led a group of 4 high school students in a research project that leverages machine learning to create a sign language to English text interpreter}
+        \resumeItem{Mentored the students on the engineering design process, computational thinking, and the basics of programming to solve real-world problems by building software solutions}
+        \resumeItem{Collaborated with other mentors to develop a curriculum that is catered to the students' needs and abilities}
+
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+% -------------------------------------------
+
+  \resumeSubheading
+      {Full Stack Developer}{Jun. 2020 -- Jan. 2021}
+      {Freelance - Ivory Jewelry}{Remote}
+      \resumeItemListStart
+        \resumeItem{Developed an ecommerce store for a jewelry brand \href{https://ivoryjewelry.shop/}{\underline{ivoryjewelry.shop}} where products can be added, edited or removed dynamically by the admins}
+        % \resumeItem{Improved SEO by using \textbf{Next.js} with \textbf{React} for server side rendering, and ensured a \textbf{rating of 100\% for SEO} on Google Lighthouse}
+        \resumeItem{\textbf{Reduced initial page load time by 20\%} by leveraging Next.js to cache the rendered pages}
+        }
+        % \resumeItem{Implemented \textbf{Firebase authentication} with different user roles in which admins have permissions to perform CRUD operations on the products}
+        % \resumeItem{Created an admin panel that allows the root user to keep track of orders and manage admins}
+
+        \resumeItemListEnd
+
+
+    
+
+
+    \resumeSubheading
+      {Full Stack Developer}{Dec. 2019 -- Jun. 2020}
+      {Freelance - Archery Hub}{Remote}
+
+      \resumeItemListStart
+        \resumeItem{Designed and developed a web app for an archery academy \href{https://archeryhub.club/}{\underline{archeryhub.club}} using \textbf{React}, \textbf{Redux} and  \textbf{Node.js}}
+        \resumeItem{Connected the app to the Google Calendar API to create the booking functionality which allows users to book different time slots in different locations}
+        }
+      \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+
+
+
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          { \href{https://ratemycourses.io/}{\textbf{RateMyCourses.io}      \ExternalLink } $|$ \emph{React, Next.j, Node.js, MongoDB, Mongoose, AWS }}{}
+            \resumeItemListStart
+            \resumeItem{Built the web app \href{https://ratemycourses.io/}{\underline{ratemycourses.io}} which has had over \textbf{200,000 page views} and is used by students to review and get advice on university courses}
+            % \resumeItem{Optimized the \textbf{performance rating on Google Lighhouse to 100\%} which resulted in a great user experience}
+          \resumeItemListEnd
+
+          \resumeProjectHeading
+          { \href{https://sign-language-detector-yasserelsaid.vercel.app/}{\textbf{Sign Language Interpreter}      \ExternalLink } \href{https://github.com/yasserelsaid/SignLanguageDetector}{\faGithub }  \href{https://www.youtube.com/watch?v=k1LJ32lmItc}{Demo   \faYoutubePlay }
+          $|$ \emph{Google Teachable Machine, Tensorflow, React }} {}
+            \resumeItemListStart
+            \resumeItem{Engineered a  Sign Language to English text interpreter, trained using Google Teachable Machine with Tensorflow to detect common ASL signs
+            }
+        \resumeItemListEnd
+  
+     
+    \resumeSubHeadingListEnd
+
+
+
+%
+
+
+
+
+%  \section{Extracurricular Activities }
+%     \resumeSubHeadingListStart
+%       \resumeProjectHeading
+%           {\textbf{Archery}}{}
+%             \resumeItemListStart
+
+%             \resumeItem{Gold medalist in both the individual and team events in the African Open Archery Championship in 2014}
+%           \resumeItemListEnd
+    
+%     \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
