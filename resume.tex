@@ -29,16 +29,17 @@
 %----------FONT OPTIONS----------
 % sans-serif
 % \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
+\usepackage[sfdefault]{roboto}
 % \usepackage[sfdefault]{noto-sans}
 % \usepackage[default]{sourcesanspro}
+% \usepackage[sfdefault]{montserrat}
 
 % serif
 % \usepackage{CormorantGaramond}
 % \usepackage{charter}
 
 
-\pagestyle{fancy}
+% \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
@@ -70,7 +71,7 @@
 
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-1pt}}
+    {#1 \vspace{1.1pt}}
   }
 }
 
@@ -93,7 +94,7 @@
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
@@ -140,8 +141,8 @@
 
 \begin{center}
     \textbf{\Huge \scshape Yasser Elsaid} \\ \vspace{1pt}
-     \href{mailto:yelsaid@my.yorku.ca}{\underline{yelsaid@my.yorku.ca}} $|$ 
-     \underline{+1(647)6774960} $|$ 
+     \href{mailto:yassermelsaeed@gmail.com}{\underline{yassermelsaeed@gmail.com}} $|$ 
+    %  \underline{+1(647)6774960} $|$ 
     \href{https://linkedin.com/in/yasserelsaid}{\underline{linkedin.com/in/yasserelsaid}} $|$
     \href{https://github.com/yasserelsaid}{\underline{github.com/yasserelsaid}} $|$
     \href{https://yasserelsaid.com}{\underline{yasserelsaid.com}}
@@ -158,16 +159,6 @@
    
   \resumeSubHeadingListEnd
 
-  %-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
-\begin{itemize}[leftmargin=0.15in, label={}]
-   \small{\item{
-    \textbf{Languages}{: JavaScript, Go, Python, C, C++, Java, SQL, HTML, CSS} \\
-    \textbf{Frameworks/Tools}{: React, Node.js, AWS, Docker, DynamoDB, MongoDB, Mongoose, MySQL, Git, Next.js, Postman, Gin, RESTful APIs, AJAX, Selenium } \\
-    % \textbf{Other}{: Data Structures \& Algorithms}
-   }}
-\end{itemize}
-
 
 %-----------EXPERIENCE-----------
 \section{Experience}
@@ -177,18 +168,18 @@
       {Meta}{Jun. 2022 -- Sep. 2022}
       {Software Engineer Intern}{Seattle, Washington}
       \resumeItemListStart
-        \resumeItem{Backend intern on the Developer Experience team}
-        \resumeItem{Implementing email verification logic in \href{https://developers.facebook.com}{\underline{developers.facebook.com}}}
-
+        \resumeItem{Implemented backend infrastructure in HACK/PHP for the Developer Communication Platform to facilitate communication between Meta and 3rd party developers}
+        \resumeItem{Developed a pipeline to send out reminder alerts to complete required actions for apps on \href{https://developers.facebook.com}{\underline{developers.facebook.com}} which launched to \textbf{5M+ apps} worldwide}
+        \resumeItem{Improved developer reachability by implementing email verification logic for 'Facebook for Developers' resulting in \textbf{100,000+ verified emails}}
         \resumeItemListEnd
 
     \resumeSubheading
       {Tesla}{Jan. 2022 -- Apr. 2022}
       {Software Engineer Intern}{Palo Alto, California}
       \resumeItemListStart
-        \resumeItem{Developed internal tools to improve developer workflows, saving upwards of \textbf{1 hour per developer per week} (across 35 developers)}
-        \resumeItem{Developed an internal tool that lets testers subscribe to a certain build and sends it to their car when it's ready}
-        \resumeItem{Worked on automated testing for the infotainment system and increased test coverage by \textbf{10\%}}
+        \resumeItem{Developed internal tools to improve developer workflows, \textbf{saving upwards of 1 hour/developer/week} (across 35 developers)}
+        \resumeItem{Developed an internal tool that sends new software builds to test cars to allow for testing new features}
+        \resumeItem{Worked on automated testing for the infotainment system and \textbf{increased test coverage by 10\%}}
 
         \resumeItemListEnd
 
@@ -200,7 +191,7 @@
         \resumeItem{Developed microservices in \textbf{Go} for cloud computing, monitoring, cost management, and DevOps services}
         \resumeItem{Migrated and improved a \textbf{Ruby on Rails} application to a more maintainable \textbf{React} application connected to Go microservices for better performance and user experience}
         \resumeItem{Optimized response time of multiple endpoints by making use of the synchronization features in Go which resulted in a \textbf{20\% faster response time}}
-        \resumeItem{Automated deployment of \textbf{Docker} containers to \textbf{Kubernetes} cluster using \textbf{Gitlab CI pipelines}}
+        % \resumeItem{Automated deployment of \textbf{Docker} containers to \textbf{Kubernetes} cluster using \textbf{Gitlab CI pipelines}}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -210,7 +201,7 @@
       \resumeItemListStart
         \resumeItem{Led a group of 4 high school students in a research project that leverages machine learning to create a sign language to English text interpreter}
         \resumeItem{Mentored the students on the engineering design process, computational thinking, and the basics of programming to solve real-world problems by building software solutions}
-        \resumeItem{Collaborated with other mentors to develop a curriculum that is catered to the students' needs and abilities}
+        % \resumeItem{Collaborated with other mentors to develop a curriculum that is catered to the students' needs and abilities}
 
       \resumeItemListEnd
       
@@ -278,7 +269,16 @@
     \resumeSubHeadingListEnd
 
 
-
+  %-----------PROGRAMMING SKILLS-----------
+  \section{Technical Skills}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+     \small{\item{
+      \textbf{Languages}{: JavaScript, Go, Python, C, C++, Java, SQL, HTML, CSS} \\
+      \vspace{2pt}
+      \textbf{Frameworks/Tools}{: React, Node.js, AWS, Docker, DynamoDB, MongoDB, Mongoose, MySQL, Git, Next.js, Postman, Gin, RESTful APIs, AJAX, Selenium } \\
+      % \textbf{Other}{: Data Structures \& Algorithms}
+     }}
+  \end{itemize}
 %
 
 
